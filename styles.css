@@ -21,7 +21,7 @@ body {
 
 header {
     height: 66px;
-    background-color: #1B83E2;
+    background-color: #683a94;
 }
 
 h1 {
@@ -73,7 +73,7 @@ input {
 }
 
 button {
-    background: #1B83E2;
+    background: #683a94;
     color: white;
     border: none;
     border-radius: 25px;
@@ -94,7 +94,7 @@ button:active {
 }
 
 section {
-    border: 1px solid #1B83E2;
+    border: 1px solid #683a94;
     border-radius: 4px;
 }
 
@@ -111,7 +111,7 @@ section {
 .currency-value {
     font-size: 20px;
     font-weight: 700;
-    color: #1B83E2;
+    color: #683a94;
 }
 
 .arrow-img {
