@@ -3,6 +3,7 @@ const select = document.getElementById('currency-select')
 
 const dolar = 5.06
 const euro = 5.52
+const bitcoin = 0.0000069
 
 const convertValues = () => {
     const inputReais = document.getElementById('input-real').value
@@ -11,6 +12,7 @@ const convertValues = () => {
 
     const sumConvertDolar = (inputReais / dolar).toFixed(2)
     const sumConvertEuro = (inputReais / euro).toFixed(2)
+    const sumConvertBitcoin = (inputReais * bitcoin)
 
     realValueText.innerHTML = inputReais
 
@@ -30,6 +32,10 @@ const convertValues = () => {
         ).format(sumConvertEuro)
     }
 
+    if (select.value === "Bitcoin") {
+            currancyValueText.innerHTML = sumConvertBitcoin
+    }
+
 }
 
 changeCurrency = () => {
@@ -43,6 +49,11 @@ changeCurrency = () => {
     if (select.value === 'US$ Dolar Americano') {
         currencyName.innerHTML = "Dolar"
         currencyImg.src = "./assets/eua.png"
+    }
+
+    if (select.value === 'Bitcoin') {
+        currencyName.innerHTML = "Bitcoin"
+        currencyImg.src = "./assets/bitcoin.png"
     }
 
     select.addEventListener('change', convertValues)
