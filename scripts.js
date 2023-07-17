@@ -14,7 +14,7 @@ const convertValues = async () => {
 
     const sumConvertDolar = (inputReais / dolar).toFixed(2)
     const sumConvertEuro = (inputReais / euro).toFixed(2)
-    const sumConvertBitcoin = (inputReais / bitcoin)
+    const sumConvertBitcoin = (inputReais / bitcoin).toFixed(10)
 
     realValueText.innerHTML = inputReais
 
